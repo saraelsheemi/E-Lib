@@ -14,18 +14,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.json.simple.JSONObject;
  
-@Path("/calculator/{number1}/{number2}")
  public class DatabaseController {
-	 @GET
-	  @Produces(MediaType.TEXT_PLAIN)
-	  public String getResults(@PathParam("number1") String number1, @PathParam("number2") String number2) {
-	    JSONObject object = new JSONObject();
-	    object.put("add", Integer.parseInt(number2)+Integer.parseInt(number1));
-	    object.put("subtract", Integer.parseInt(number2)-Integer.parseInt(number1));
-	    object.put("divide", Integer.parseInt(number2)/Integer.parseInt(number1));
-	    object.put("multiply", Integer.parseInt(number2)*Integer.parseInt(number1));
-	    return object.toJSONString();
-	  }
  	public void test(){
  		try{
  			String url =""; //"jdbc:sqlserver://"el host";databaseName=MYDB";

@@ -12,10 +12,10 @@ import org.json.simple.JSONObject;
 
 @Path("/course")
 public class CourseQueries {
-	@Path("/add/{id}")
+	@Path("/add/{id}/{name}/{code}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String addCQuery(@PathParam("id") String id){
+	public String addCQuery(@PathParam("id") String id,@PathParam("name") String name,@PathParam("code") String code){
 		return "<p> add </p>";
 	}
 	
@@ -26,10 +26,10 @@ public class CourseQueries {
 		return "<p> remove </p>";
 	}
 	
-	@Path("/get/{id}")
+	@Path("/getinfo/{id}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String getCQuery(@PathParam("id") String id){
+	public String getCInfoQuery(@PathParam("id") String id){
 		return "<p> get </p>";
 	}
 }

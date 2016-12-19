@@ -90,9 +90,9 @@
                 android:text="View Request"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:id="@+id/viewRequest"
                 android:layout_marginLeft="220dp"
-                android:background="#aee5e5e5" />
+                android:background="#aee5e5e5"
+                android:id="@+id/viewRequest" />
 
             <View
                 android:layout_width="match_parent"
@@ -142,7 +142,7 @@
                 android:text="View Request"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:id="@+id/button14"
+                android:id="@+id/viewRequest"
                 android:layout_marginLeft="220dp"
                 android:background="#aee5e5e5" />
 
@@ -194,7 +194,7 @@
                 android:text="View Request"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:id="@+id/button14"
+                android:id="@+id/viewRequest"
                 android:layout_marginLeft="220dp"
                 android:background="#aee5e5e5" />
 

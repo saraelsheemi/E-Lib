@@ -3,7 +3,7 @@ package com.example.win81.e_lib;
 /**
  * Created by tabda on 12/18/2016.
  */
-
+/*
 public class Controller {
     public static int RateMaterial(material m ,int rate ,User user  ){
 
@@ -68,3 +68,4 @@ public class Controller {
 
 }
 
+*/

@@ -12,7 +12,7 @@ import org.json.simple.JSONObject;
 public class MaterialQueries {
 	//rating material will require the material id and the rating given to this material 
 	//this function is called when URL http://localhost:8080/Elib_service/rest/material/rate/5 is called
-	@Path("/rate/{id}/rating")
+	@Path("/rate/{id}/{rating}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String rateMQuery(@PathParam("id") String id,@PathParam("rating") String rating){
@@ -36,12 +36,15 @@ public class MaterialQueries {
 		return "<p> delete </p>";
 	}
 	
+	//save material by id to a specific user 
 	@Path("/save/{materialID}/{userID}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String saveMQuery(@PathParam("materialID") String materiaID,@PathParam("userID") String userID){
 		return "<p> save </p>";
 	}
+	// add new material to the database 
+	//Only Admin users can use this function
 	@Path("/add/{id}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)

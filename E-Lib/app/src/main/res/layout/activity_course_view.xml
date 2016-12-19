@@ -54,7 +54,8 @@
         android:layout_alignTop="@+id/textView14"
         android:layout_toLeftOf="@+id/ViewRequest"
         android:layout_toStartOf="@+id/ViewRequest"
-        android:layout_marginRight="20dp" />
+        android:layout_marginRight="20dp"
+        android:clickable="true" />
 
     <TextView
         android:text="Books"

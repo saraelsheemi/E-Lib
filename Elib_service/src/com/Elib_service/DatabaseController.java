@@ -17,7 +17,8 @@ import org.json.simple.JSONObject;
  public class DatabaseController {
  	public void test(){
  		try{
- 			String url =""; //"jdbc:sqlserver://"el host";databaseName=MYDB";
+ 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); 
+ 			String url ="jdbc:sqlserver://localhost:1433;DatabaseName=Elib";
 			String userName = "elib";
  			String password = "elibelib";
  			//get a connection to database with the connection string URL 
@@ -25,10 +26,11 @@ import org.json.simple.JSONObject;
  			//create a statement to be executed on the target database
  			Statement statement = dbConnection.createStatement(); 
  			//execute the statement on the target database
- 			String sqlQuery = "";
+ 			String sqlQuery = "select * from Users";
  			ResultSet resultSet = statement.executeQuery(sqlQuery);
+ 			resultSet.next();
 			//process the result set
- 			System.out.println(resultSet.toString());
+ 			System.out.println(resultSet.getString("name"));
  		}catch(Exception exc){
  			exc.printStackTrace();
  		}

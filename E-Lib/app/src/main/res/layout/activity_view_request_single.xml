@@ -111,14 +111,14 @@
                 android:text="Decline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button13"
+                android:id="@+id/decline"
                 android:layout_weight="0.92" />
 
             <Button
                 android:text="Confirm"
                 android:layout_width="241dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/button12" />
+                android:id="@+id/accept" />
         </LinearLayout>
     </LinearLayout>
 

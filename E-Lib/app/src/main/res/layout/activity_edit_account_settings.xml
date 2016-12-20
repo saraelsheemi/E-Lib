@@ -83,9 +83,9 @@
 
         <Button
             android:text="confirm"
-            android:layout_width="140dp"
+            android:layout_width="167dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button7"
+            android:id="@+id/confirm"
             android:layout_marginLeft="200dp" />
 
     </LinearLayout>

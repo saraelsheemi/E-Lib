@@ -33,8 +33,8 @@
         android:id="@+id/editText2"
         tools:text="This book is useful"
         android:layout_below="@+id/textView11"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/signIn"
+        android:layout_alignEnd="@+id/signIn"
         android:layout_marginTop="194dp" />
 
     <RatingBar
@@ -49,19 +49,12 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="41dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="User1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/signIn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="34dp"
@@ -73,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:layout_alignTop="@+id/button2"
+        android:layout_alignTop="@+id/forgetPassword"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -81,22 +74,21 @@
         android:text="report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/forgetPassword"
         android:background="#00b02c2c"
         android:textSize="10dp"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_alignLeft="@+id/signIn"
+        android:layout_alignStart="@+id/signIn" />
 
     <Button
-        android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        tools:text="Comment"
+        android:id="@+id/signIn"
         android:layout_below="@+id/editText2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="Comment" />
 
     <TextView
         android:layout_width="wrap_content"

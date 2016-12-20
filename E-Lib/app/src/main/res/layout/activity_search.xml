@@ -20,13 +20,6 @@
         android:src="@android:drawable/ic_search_category_default"
         android:layout_marginTop="20dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText8"
-        android:layout_alignBottom="@+id/imageView8"
-        android:layout_toRightOf="@+id/imageView8" />
-
     <ExpandableListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,4 +28,21 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="100dp"
         tools:listitem="@android:layout/simple_list_item_1" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/searchBar" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_toLeftOf="@+id/searchBar"
+        android:layout_toStartOf="@+id/searchBar" />
 </RelativeLayout>

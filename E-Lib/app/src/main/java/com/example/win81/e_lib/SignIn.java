@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.view.Menu;
 
 public class SignIn extends AppCompatActivity {
     private static Button buttonSignUp;
@@ -18,7 +17,7 @@ public class SignIn extends AppCompatActivity {
         onClickButtonListener2();
     }
     public void onClickButtonListener(){
-        buttonSignUp=(Button)findViewById(R.id.button3);
+        buttonSignUp=(Button)findViewById(R.id.signUpButton);
         buttonSignUp.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -34,7 +33,7 @@ public class SignIn extends AppCompatActivity {
 
     }
     public void onClickButtonListener2(){
-        buttonSignIn=(Button)findViewById(R.id.button);
+        buttonSignIn=(Button)findViewById(R.id.signIn);
         buttonSignIn.setOnClickListener(
                 new View.OnClickListener(){
                     @Override

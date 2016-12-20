@@ -29,8 +29,18 @@ public class AccountQueries {
 	@Path("/delete/{id}")
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-	public String removeAccount(@PathParam("id") String id){
-		
+	public String removeAccount(@PathParam("id") String id) throws SQLException{
+		databaseCTRL = new DatabaseController(); 
+		databaseCTRL.executeUpdate("Delete from Users where u_id = "+id);
+		return "Account Deleted";
+	}
+	
+	@Path("/signin/{email}/{id}")
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+	public String signIn(@PathParam("email") String email,@PathParam("password") String password) throws SQLException{
+		databaseCTRL = new DatabaseController(); 
+//	/	databaseCTRL.executeUpdate("Delete from Users where u_id = "+id);
 		return "Account Deleted";
 	}
 	

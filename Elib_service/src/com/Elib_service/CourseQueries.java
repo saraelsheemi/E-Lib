@@ -12,6 +12,7 @@ import org.json.simple.JSONObject;
 
 @Path("/course")
 public class CourseQueries {
+	private DatabaseController databaseCTRL; 
 	@Path("/add/{id}/{name}/{code}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)

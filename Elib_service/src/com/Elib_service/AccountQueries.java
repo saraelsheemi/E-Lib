@@ -42,8 +42,9 @@ public class AccountQueries {
 	public String removeAccount(@PathParam("id") String id) throws SQLException {
 		databaseCTRL = new DatabaseController();
 		databaseCTRL.executeUpdate("Delete from Users where u_ID = " + id);
-
-		return "Account Deleted";
+		JSONObject object = new JSONObject();
+		object.put("Account", "Removed");
+		return object.toJSONString();
 	}
 
 	@Path("/signin/{email}/{password}")

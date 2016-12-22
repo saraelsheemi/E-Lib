@@ -66,8 +66,10 @@ public class Test {
 			
 			
 			ConnectorBuilder adduser = new addUserURL(); 
+			ConnectorBuilder signin = new signInURL();
+			ConnectorBuilder removeUser = new removeUserURL();
 			Connector connector = new Connector(x);
-			connector.setConnectorBuilder(adduser);
+			connector.setConnectorBuilder(removeUser);
 			connector.initiateURL();
 			connector.sendData();
 		}

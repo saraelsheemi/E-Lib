@@ -29,10 +29,11 @@ public class AccountQueries {
 			@PathParam("university") String university) throws SQLException {
 		databaseCTRL = new DatabaseController();
 		databaseCTRL.executeUpdate("insert into Users values (" + id + ",'"
-				+ name + "','" + type + "','" + email + "','" + password
-				+ "','" + date + "','" + gender + "'," + level + ",'" + faculty
+				+ name + "','" + type + "','" + email + "','" + password+ "','" + gender + "','" +date+ "'," + level + ",'" + faculty
 				+ "','" + university + "')");
-		return "Account Created";
+		JSONObject object = new JSONObject();
+		object.put("Account", "Created");
+		return object.toJSONString();
 	}
 
 	@Path("/delete/{id}")

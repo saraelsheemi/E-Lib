@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_65">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_111">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
@@ -35,7 +35,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/org.osgi.core-4.2.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/osgi-resource-locator-1.0.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/persistence-api-1.0.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sqljdbc.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sqljdbc4.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sqljdbc41.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sqljdbc42.jar"/>

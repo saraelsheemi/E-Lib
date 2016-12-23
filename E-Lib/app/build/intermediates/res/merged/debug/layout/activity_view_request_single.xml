@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aee5fb"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="Request ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView36"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="987237"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:text="Course Name "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:text="CS323"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="Matrial Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView37"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="introduction to computer science.pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView34"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView38"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:text="teaching undergradute basic concepts for computer science"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView39"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Tony GADDIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView32"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="File url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView35"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="File path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:weightSum="1">
+
+            <Button
+                android:text="Decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decline"
+                android:layout_weight="0.92" />
+
+            <Button
+                android:text="Confirm"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/accept" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

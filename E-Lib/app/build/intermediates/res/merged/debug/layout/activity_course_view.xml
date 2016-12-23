@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_course_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.win81.e_lib.help"
+    android:background="#aee5fb">
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="3dp"
+        android:background="#71868d"
+        android:id="@+id/view"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="-20dp" />
+
+    <TextView
+        android:text="Course name "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView14"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="Slides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:id="@+id/textView15"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:textSize="17dp"
+        android:paddingLeft="0dp"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_toLeftOf="@+id/ViewRequest"
+        android:layout_toStartOf="@+id/ViewRequest"
+        android:layout_marginRight="20dp"
+        android:clickable="true" />
+
+    <TextView
+        android:text="Books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView21"
+        android:textSize="17dp"
+        android:layout_alignLeft="@+id/textView15" />
+
+    <TextView
+        android:text="Exams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:textSize="17dp"
+        android:layout_alignLeft="@+id/textView25" />
+
+    <TextView
+        android:text="Files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:textSize="17dp" />
+
+    <TextView
+        android:text="Links "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:text="Reads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:textSize="17dp"
+        android:layout_alignLeft="@+id/textView21" />
+
+    <Button
+        android:text="View requests "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViewRequest"
+        android:background="#FFD3E5EC"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/uploadRequest"
+        android:layout_toStartOf="@+id/uploadRequest"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:text="Upload Request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadRequest"
+        android:background="#FFD3E5EC"
+        android:layout_alignBaseline="@+id/ViewRequest"
+        android:layout_alignBottom="@+id/ViewRequest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

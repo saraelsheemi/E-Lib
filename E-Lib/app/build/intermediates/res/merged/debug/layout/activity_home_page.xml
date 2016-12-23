@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.win81.e_lib.HomePage">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="168dp"
+        android:layout_marginBottom="300dp"
+        android:background="#aafc96"
+        android:id="@+id/relativeLayout2"
+        android:focusableInTouchMode="false">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/home"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="180dp"
+        android:background="@android:color/holo_blue_bright"
+        android:id="@+id/relativeLayout" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#c4bfbf"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="120dp"
+        android:id="@+id/relativeLayout3" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscribes"
+            android:id="@+id/subscribes"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ae0fa0"
+        android:id="@+id/relativeLayout4"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:layout_toLeftOf="@+id/relativeLayout3"
+        android:layout_toStartOf="@+id/relativeLayout3"
+        android:layout_marginBottom="120dp" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Courses"
+            android:id="@+id/courses"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="317dp"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/relativeLayout5" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:id="@+id/signOut"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="172dp"
+        android:layout_marginBottom="0dp"
+        android:background="#f3ef7a"
+        android:id="@+id/relativeLayout6"
+        android:layout_marginTop="317dp" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/settings"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:textAlignment="center"
+            android:background="#00ffffff"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:nestedScrollingEnabled="false"
+            android:capitalize="none"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ViewAnimator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewAnimator"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

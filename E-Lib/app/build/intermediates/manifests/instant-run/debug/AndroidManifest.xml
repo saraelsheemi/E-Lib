@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.win81.e_lib"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.win81.e_lib.SignIn" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.win81.e_lib.SignUp" >
+            <intent-filter>
+                <action android:name="com.example.win81.e_lib.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.win81.e_lib.HomePage" />
+        <activity android:name="com.example.win81.e_lib.Notification" />
+        <activity android:name="com.example.win81.e_lib.UploadRequestView" />
+        <activity android:name="com.example.win81.e_lib.material" />
+        <activity android:name="com.example.win81.e_lib.savedmaterial" />
+        <activity android:name="com.example.win81.e_lib.saved_material" />
+        <activity android:name="com.example.win81.e_lib.search" />
+        <activity android:name="com.example.win81.e_lib.help" />
+        <activity android:name="com.example.win81.e_lib.CourseView" />
+        <activity android:name="com.example.win81.e_lib.editprofile" />
+        <activity android:name="com.example.win81.e_lib.reviewRequest" />
+        <activity android:name="com.example.win81.e_lib.editAccountSettings" />
+        <activity android:name="com.example.win81.e_lib.UserUploadRequest" />
+        <activity android:name="com.example.win81.e_lib.ViewRequestSingle" />
+    </application>
+
+</manifest>

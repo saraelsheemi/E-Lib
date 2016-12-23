@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_4fa75ffbd86a98f44d906e5cd2de5da56a445dbc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tabda\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_3107f23c35b7fda4a459eddb97787a964cc8ee72\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_3e8b941d5c385f1c1f0103d01c6f62d70dc82886\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_be587888f933f6515a06d3cec3005c3f65166761\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_b242f3a5b5c10896b3090da227dd8f9a94f64252\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c0c98e85411d6b0766e320c306a91708e24ceaa6">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3096fdcb822cf8e4503c766deabe9f1b71d9827d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aa0780ab6306dc041e27dbdbee8976de1dea5060">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_af904abce028dc3c3b493305e08bc3dc6fc9951e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_7957e0bf5e83aef9fd17a59dd7b6b99585343ffe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_a758fa21ac702dce6113be57cc3528a6ac30af29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="E:\faculty\thirdYear\1stTerm\softwareEngineering\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_2707edfeac9dece9637d449c09fc4460893836d3\classes.dex" />
+    </item>
+
+</items>

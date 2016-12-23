@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aee5fb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Current Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView29"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText27"
+            android:layout_marginTop="5dp"
+            android:text="Current Password"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="New Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText28"
+            android:layout_marginTop="5dp"
+            android:text="New Password"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="Confirm Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView30"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText29"
+            android:layout_marginTop="5dp"
+            android:text="New Password"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:text="Mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView31"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText30"
+            android:text="Example@ex.com"
+            android:layout_marginLeft="15dp" />
+
+        <Button
+            android:text="confirm"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm"
+            android:layout_marginLeft="200dp" />
+
+    </LinearLayout>
+</LinearLayout>

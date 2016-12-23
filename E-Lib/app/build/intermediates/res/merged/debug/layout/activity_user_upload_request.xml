@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aee5fb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="File Name "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Enter File Name "
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:text="Descriptin"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/emailAddressText"
+            android:text="Enter short Note about this material" />
+
+        <TextView
+            android:text="Author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Author Name"
+            android:ems="10"
+            android:id="@+id/editText8" />
+
+        <TextView
+            android:text="File path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20" />
+
+        <Button
+            android:text="Browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp" />
+
+        <Button
+            android:text="Send Request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6" />
+    </LinearLayout>
+</LinearLayout>

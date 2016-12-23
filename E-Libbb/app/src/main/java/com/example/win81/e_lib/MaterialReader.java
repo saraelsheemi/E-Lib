@@ -5,7 +5,7 @@ package com.example.win81.e_lib;
  */
 
 public abstract class MaterialReader {
-    ReaderImplementor r = new ReaderImplementor();
+    ReaderImplementer r = new ReaderImplementer();
 
     public static void read(){
 

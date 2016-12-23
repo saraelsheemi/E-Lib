@@ -15,7 +15,7 @@ import org.json.simple.JSONObject;
 public class uploadRequestQueries {
 	private DatabaseController databaseCTRL; 
 
-	@Path("/{id}/{u_ID}/{fileDescription}/{file}/{name}/{author}/{course_ID}/{date}")
+	@Path("upload/{id}/{u_ID}/{fileDescription}/{file}/{name}/{author}/{course_ID}/{date}")
     @GET
     @Produces(MediaType.TEXT_PLAIN)
 	public String upload(@PathParam("id") String id,@PathParam("u_ID") String u_ID,
@@ -27,6 +27,14 @@ public class uploadRequestQueries {
 		return "Removed";
 		
 	}
-
+	@Path("accept/{id}")
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+	public String acceptorReject(@PathParam("id") String id) throws SQLException{
+		databaseCTRL = new DatabaseController(); 
+		databaseCTRL.executeUpdate("insert into Upload_Request values (");
+		return "Removed";
+		
+	}
 
 }

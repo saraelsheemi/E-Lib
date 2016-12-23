@@ -12,6 +12,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+<<<<<<< HEAD
 
         Button signIn = (Button) findViewById(R.id.signIn);
         signIn.setOnClickListener(this);
@@ -23,6 +24,26 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         Button forgetPassword = (Button) findViewById(R.id.forgetPassworr);
         forgetPassword.setOnClickListener(this);
 
+=======
+        onClickButtonListener();
+        onClickButtonListener2();
+    }
+    public void onClickButtonListener(){
+        buttonSignUp=(Button)findViewById(R.id.signUpButton);
+        buttonSignUp.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v){
+                        //added by tarek i think
+                        //HomeCommands m = new openCoursePage();
+                        //m.execute();
+                        //
+                        Intent intent = new Intent(SignIn.this,SignUp.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+>>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
 
     }
 

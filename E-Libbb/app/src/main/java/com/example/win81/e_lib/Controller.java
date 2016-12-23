@@ -1,73 +1,105 @@
 package com.example.win81.e_lib;
 
+import java.util.ArrayList;
+
 /**
  * Created by tabda on 12/18/2016.
  */
 
+<<<<<<< HEAD
 public class Controller  {
     public static int RateMaterial(material m ,int rate ,User user  ){
+=======
+public class Controller {
+>>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
 
-        return totalRate;
-    };
-    public static int saveMaterial(material m ,User user){
+    private Object object1;
 
-        return materialId;
-    };
-    public static void readMaterial(material m){
+    public int rateMaterial(Material m) {
 
-    };
-    public static int addComment(String comment ,User user ,int materialId ){
+        return m.getRating();
+    }
 
-        return commentId;
-    };
-    public static int reportComment (int commentId ,User user ){
 
-        return reportId;
-    };
-    public static int removeComment (int commentId ,User user ,){
+    public int saveMaterial(Material m) {
 
-        return userId;
-    };
-    public static void deleteMaterial (matrial m ,User user ){
+        return m.getMaterialID();
+    }
 
-    };
-    public static int uploadRequest (material m , User user ){
+    public void readMaterial(Material m) {
 
-        return requestId;
-    };
-    public static void viewRequest (int requestId ){
+    }
 
-    };
-    public static void openMaterial (material m ,User user){
+    public void openMaterial(Material m) {
 
-        return materialId;
-    };
-    public static int addMaterial (material m ){
+    }
 
-        return materialId;
-    };
-    public static void subscibe(course course ,User user){
+    public void deleteMaterial(Material m) {
 
-    };
-    public static void unsubscribe(course course ,User user){
+    }
 
-    };
-    public static void signIn(stirng name ,int id ){
+    public int addMaterial(Material m) {
 
+        return m.getMaterialID();
+    }
+
+    public void addComment(String comment) {
+
+    }
+
+    public void reportComment(int commentID) {
+
+    }
+
+    public void removeComment(int commentID) {
+
+    }
+
+
+    public void uploadRequest(UploadRequest requset) {
+
+    }
+
+
+    public void viewRequests(int requestID) {
+
+    }
+
+
+    public void subscibe(Course c) {
+
+    }
+
+
+    public void unsubscribe(Course c) {
+
+    }
+
+
+    public void signIn(String name, String password) {
+
+    }
+
+    public void signUp(Account newAccount) {
+
+    }
+
+    public void deactivate(Account user) {
+
+<<<<<<< HEAD
     };
     public static void signup(String userNameText ,String emailAddressText ,String PasswordText ,
                               String confirmPasswordText ,String dateOfBirthText){
         AccountController accountController = new AccountController();
         accountController.SignUp(userNameText ,emailAddressText ,PasswordText ,confirmPasswordText ,dateOfBirthText);
+=======
+    }
+>>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
 
-    };
-    public static void deactivate(User user){
+    public void requestHelp(Account user) {
 
-    };
-    public static void requestHelp(User user){
+    }
 
-        return inquiryId;
-    };
 
 }
 

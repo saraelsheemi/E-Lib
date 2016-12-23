@@ -30,7 +30,7 @@ public class MaterialQueries {
 	@Path("/remove/{materialId}/{userID}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String removeMQuery(@PathParam("materialD") String materialID,@PathParam("userID") String userID) throws SQLException{
+	public String unsaveMQuery(@PathParam("materialD") String materialID,@PathParam("userID") String userID) throws SQLException{
 		databaseCTRL = new DatabaseController(); 
 		databaseCTRL.executeUpdate("Delete from Saves where m_ID = "+materialID+" and "+
 		"u_ID = "+userID);
@@ -44,6 +44,7 @@ public class MaterialQueries {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String deleteMQuery(@PathParam("id") String id) throws SQLException{
 		databaseCTRL = new DatabaseController(); 
+		databaseCTRL.executeUpdate("Delete from Saves where m_ID = "+id);
 		databaseCTRL.executeUpdate("Delete from Material where m_ID = "+id);
 		return "Material Removed";
 	}

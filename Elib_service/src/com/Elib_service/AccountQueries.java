@@ -41,6 +41,8 @@ public class AccountQueries {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String removeAccount(@PathParam("id") String id) throws SQLException {
 		databaseCTRL = new DatabaseController();
+		databaseCTRL.executeUpdate("Delete from Subscribe where u_ID = " + id);
+		databaseCTRL.executeUpdate("Delete from Saves where u_ID = " + id);
 		databaseCTRL.executeUpdate("Delete from Users where u_ID = " + id);
 		JSONObject object = new JSONObject();
 		object.put("Account", "Removed");
@@ -54,8 +56,7 @@ public class AccountQueries {
 			@PathParam("password") String password) throws SQLException {
 		databaseCTRL = new DatabaseController();
 		JSONObject object = new JSONObject();
-		ResultSet resultSet = databaseCTRL
-				.executeQuery("Select * from Users where email = " + "'"
+		ResultSet resultSet = databaseCTRL.executeQuery("Select * from Users where email = " + "'"
 						+ email + "'");
 
 		if (!resultSet.next()) {
@@ -69,6 +70,7 @@ public class AccountQueries {
 			object.put("Invalid", "Email or Password");
 		return object.toJSONString();
 	}
+<<<<<<< HEAD
 	@Path("/userexist/{email}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
@@ -85,5 +87,12 @@ public class AccountQueries {
 		}
 		
 		
+=======
+	public int getLastID() throws SQLException{
+		databaseCTRL = new DatabaseController();
+		ResultSet resultSet = databaseCTRL.executeQuery("Select max(u_ID) from Users");
+		resultSet.next();
+		return Integer.parseInt(resultSet.getString("u_ID"));		
+>>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
 	}
 }

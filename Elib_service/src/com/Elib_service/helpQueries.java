@@ -13,10 +13,9 @@ import org.json.simple.JSONObject;
 @Path("/help")
 public class helpQueries {
 	private DatabaseController databaseCTRL; 
-	@Path("")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String help(@PathParam("id") String id,@PathParam("rating") String rating){
+	public String send(@PathParam("id") String id,@PathParam("rating") String rating){
 		return "<p> rate </p>";
 	}
 }

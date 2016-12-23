@@ -13,33 +13,50 @@ public class UserInquiry {
     int inquiryID;
     String inquiryContent;
     Date inquiryDate;
-    Account inquirySenderAccount = new Account();
+    Account inquirySender = new Account();
+
+    //Default Constructor
+
+    UserInquiry() {
+        this.inquiryID = 0;
+        this.inquiryContent = " ";
+        this.inquiryDate = null;
+        this.inquirySender = null;
+    }
+
+    //Parameterized Constructor
+    UserInquiry(int inquiryID, String inquiryContent, Date inquiryDate, Account inquirySender) {
+        this.inquiryID = inquiryID;
+        this.inquiryContent = inquiryContent;
+        this.inquiryDate = inquiryDate;
+        this.inquirySender = inquirySender;
+    }
 
     //Setters and Getters
 
-    public void setInquiryID(int inquiryID){
+    public void setInquiryID(int inquiryID) {
         this.inquiryID = inquiryID;
     }
 
-    public  int getInquiryID(){
+    public int getInquiryID() {
         return inquiryID;
     }
 
-    public void setInquiryContent(String inquiryContent){
+    public void setInquiryContent(String inquiryContent) {
         this.inquiryContent = inquiryContent;
     }
 
-    public  String getInquiryContent(){
+    public String getInquiryContent() {
         return inquiryContent;
     }
 
     // functionalities
 
-    public void sendInquiry(){
+    public void sendInquiry() {
 
     }
 
-    public String viewInquiry(){
+    public String viewInquiry() {
         return inquiryContent;
     }
 

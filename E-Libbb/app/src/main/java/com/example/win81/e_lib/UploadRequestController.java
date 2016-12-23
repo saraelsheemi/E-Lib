@@ -9,9 +9,9 @@ import java.io.File;
 /*
 public class UploadRequestController {
     ConnectorBuilder cb = new ConnectorBuilder();
-    ArrayList<UploadRequest> inquiry = new ArrayList<UserInquiry>();
+    ArrayList<UploadRequest> inquiry = new ArrayList<UploadRequest>();
 
-    public static void request(String request, File f){
+    public static void request(String request, File f) {
 
     }
 }

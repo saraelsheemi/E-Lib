@@ -7,25 +7,58 @@ import java.util.Date;
  */
 
 public class Comment {
-    int commentID;
-    String commentContent;
-    Date commentDate;
-    Material r = new Material();
 
-    public void setCommentID(int commentID){
+
+    private int commentID;
+    private String commentContent;
+    private String commentDate;
+    private Date date;
+    private Material r = new Material();
+    Account commenter = new Account();
+
+
+    //Default Constructor
+    Comment() {
+        this.commentID = 0;
+        this.commentContent = " ";
+        this.commentDate = null;
+        this.r = null;
+        this.commenter = null;
+    }
+
+    //Parameterized constructor
+    Comment(int commentID, String commentContent, String commentDate, Material r, Account commenter) {
+        this.commentID = commentID;
+        this.commentContent = commentContent;
+        this.commentDate = date.toString();
+        this.r = r;
+        this.commenter = commenter;
+    }
+
+    //Setters and Getters
+
+    public void setCommentID(int commentID) {
         this.commentID = commentID;
     }
 
-    public int getCommentID(){
+    public int getCommentID() {
         return commentID;
     }
 
-    public void setCommentContent(String commentContent){
+    public void setCommentContent(String commentContent) {
         this.commentContent = commentContent;
     }
 
-    public String getCommentContent(){
+    public String getCommentContent() {
         return commentContent;
+    }
+
+    public void setCommentDate(String commentDate){
+        this.commentDate = date.toString();
+    }
+
+    public String getCommentDate(){
+        return commentDate;
     }
 
 

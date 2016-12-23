@@ -22,8 +22,9 @@ public class SignIn extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        HomeCommands m = new openCoursePage();
-                        m.excute();
+                        //added by tarek i think
+                        //HomeCommands m = new openCoursePage();
+                        //m.execute();
                         //
                         Intent intent = new Intent(SignIn.this,SignUp.class);
                         startActivity(intent);

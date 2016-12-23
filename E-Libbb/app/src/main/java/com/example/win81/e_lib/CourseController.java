@@ -7,27 +7,27 @@ import java.util.ArrayList;
  */
 
 public class CourseController {
-    ArrayList<Course> courses = new  ArrayList<Course>();
+    ArrayList<Course> courses = new ArrayList<Course>();
     ConnectorBuilder cb = new ConnectorBuilder();
 
-    public static void addCourse (String courseName, int courseID){
+    public void addCourse(Course newCourse) {
 
     }
 
-    public static void removeCourse(int courseID){
+    public void removeCourse(Course courseToBeRemoved) {
 
     }
 
-    public static void subscribe(int courseID){
+    public void subscribe(Course c) {
 
 
     }
 
-    public static void unsubscribe(int courseID){
+    public void unsubscribe(Course c) {
 
     }
 
-    public static void openCourse(int courseID){
+    public void openCourse(Course c) {
 
     }
 }

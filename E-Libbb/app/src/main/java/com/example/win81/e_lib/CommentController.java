@@ -9,17 +9,16 @@ import java.util.ArrayList;
 public class CommentController {
     ConnectorBuilder cb = new ConnectorBuilder();
     ArrayList<Comment> comment = new  ArrayList<Comment>();
-    CommentReport cr = new CommentReport();
 
-    public static void addComment(String comment){
-
-    }
-
-    public static void deleteComment(int commentID){
+    public void addComment(String comment){
 
     }
 
-    public static void reportComment(int commentID){
+    public  void deleteComment(int commentID){
+
+    }
+
+    public void reportComment(int commentID){
 
 
     }

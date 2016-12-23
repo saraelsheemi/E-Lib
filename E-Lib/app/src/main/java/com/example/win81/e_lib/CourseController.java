@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by Hagar on 2016-12-19.
  */
-
+/*
 public class CourseController {
     ArrayList<Course> courses = new  ArrayList<Course>();
     ConnectorBuilder cb = new ConnectorBuilder();
@@ -31,3 +31,4 @@ public class CourseController {
 
     }
 }
+*/

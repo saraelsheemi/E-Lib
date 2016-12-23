@@ -74,18 +74,6 @@
      />
 
     <TextView
-        android:text="Date Of Birth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_marginTop="10dp"
-        android:id="@+id/textView4"
-        android:clickable="true"
-        android:layout_marginLeft="0dp"
-       />
-
-    <TextView
         android:text="Mobile Number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -211,5 +199,16 @@
         android:layout_alignParentEnd="true"
         android:background="#aee5e5e5"
         android:layout_alignBottom="@+id/textView9" />
+
+    <TextView
+        android:text="Date Of Birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView4"
+        android:clickable="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
 
 </RelativeLayout>

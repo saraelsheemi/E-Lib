@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Created by Hagar on 2016-12-19.
  */
-
+/*
 public class UserInquiryController {
     ConnectorBuilder cb = new ConnectorBuilder();
     ArrayList<UserInquiry> inquiry = new ArrayList<UserInquiry>();
@@ -17,3 +17,4 @@ public class UserInquiryController {
     }
 
 }
+*/

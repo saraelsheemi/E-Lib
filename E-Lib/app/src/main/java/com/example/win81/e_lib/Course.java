@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by Hagar on 2016-12-19.
  */
-
+/*
 public class Course {
     int courseID;
     int courseCode;
@@ -40,3 +40,4 @@ public class Course {
 
 
 }
+*/

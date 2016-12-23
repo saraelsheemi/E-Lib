@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
-            android:id="@+id/editText5"
+            android:id="@+id/emailAddressText"
             android:text="Enter short Note about this material" />
 
         <TextView
@@ -71,7 +71,7 @@
             android:text="Browse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/signUpButton" />
+            android:id="@+id/signUp" />
 
         <Button
             android:text="Send Request"

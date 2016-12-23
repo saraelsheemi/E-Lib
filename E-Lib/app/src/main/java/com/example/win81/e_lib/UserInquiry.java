@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Created by Hagar on 2016-12-19.
  */
-
+/*
 public class UserInquiry {
 
     int inquiryID;
@@ -45,3 +45,4 @@ public class UserInquiry {
 
 
 }
+*/

@@ -6,7 +6,7 @@ import java.io.File;
 /**
  * Created by Hagar on 2016-12-19.
  */
-
+/*
 public class UploadRequestController {
     ConnectorBuilder cb = new ConnectorBuilder();
     ArrayList<UploadRequest> inquiry = new ArrayList<UserInquiry>();
@@ -15,3 +15,4 @@ public class UploadRequestController {
 
     }
 }
+*/

@@ -6,6 +6,7 @@ import java.util.Date;
  * Created by Hagar on 2016-12-19.
  */
 
+/*
 public class Comment {
     int commentID;
     String commentContent;
@@ -30,3 +31,4 @@ public class Comment {
 
 
 }
+*/

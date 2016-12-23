@@ -35,6 +35,7 @@ public class CourseQueries {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String removeCQuery(@PathParam("id") String id) throws SQLException{
 		databaseCTRL = new DatabaseController(); 
+		databaseCTRL.executeUpdate("Delete from Subscribe where course_ID = "+id);
 		databaseCTRL.executeUpdate("Delete from Course where course_ID = "+id);
 		 return "Removed"; 
 	}
@@ -70,6 +71,42 @@ public class CourseQueries {
 	 	}
 		 
 		return object.toString();
+		 
+	}
+	@Path("/subscribe/{u_id}/{course_ID}")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String subscribe(@PathParam("course_ID") String course_ID,
+			@PathParam("u_ID") String u_id) throws SQLException{
+		 ArrayList <JSONObject> object = new ArrayList<JSONObject>();
+		 JSONObject obj= new JSONObject();
+		 databaseCTRL = new DatabaseController(); 
+	 	ResultSet resultSet = databaseCTRL.executeQuery("insert into Subscribe values(" + 
+		 course_ID +","+u_id + ")"); 
+	 			
+	 	
+	 	obj.put("Course","Subscribed");
+	 	
+		 
+		return obj.toString();
+		 
+	}
+	@Path("/unsubscribe/{u_id}/{course_ID}")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String unsubscribe(@PathParam("course_ID") String course_ID,
+			@PathParam("u_ID") String u_id) throws SQLException{
+		 ArrayList <JSONObject> object = new ArrayList<JSONObject>();
+		 JSONObject obj= new JSONObject();
+		 databaseCTRL = new DatabaseController(); 
+	 	ResultSet resultSet = databaseCTRL.executeQuery("delete from Subscribe where course_ID =" + 
+		 course_ID +"and u_ID = " + u_id );
+	 			
+	 	
+	 	obj.put("Course","Unsubscribed");
+	 	
+		 
+		return obj.toString();
 		 
 	}
 }

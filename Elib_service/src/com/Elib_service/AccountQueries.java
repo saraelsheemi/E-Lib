@@ -71,10 +71,71 @@ public class AccountQueries {
 			object.put("Invalid", "Email or Password");
 		return object.toJSONString();
 	}
+
+
+	@Path("/userexist/{email}")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String cheackUserExist(@PathParam("email") String email)throws SQLException{
+		databaseCTRL = new DatabaseController();
+		JSONObject object = new JSONObject();
+		
+		ResultSet resultSet = databaseCTRL
+				.executeQuery("Select * from Users where email = " + "'"
+						+ email + "'");
+		if (!resultSet.next()) {
+			object.put("this email is accepted ", resultSet);
+		}
+			return object.toJSONString();
+		
+	}
+		
+	@Path("/getinfo/{id}")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getInfo(@PathParam("id") String id)throws SQLException{
+		databaseCTRL = new DatabaseController();
+		JSONObject object = new JSONObject();
+			
+		ResultSet resultSet = databaseCTRL
+				.executeQuery("Select * from Users where ID = " + "'"
+						+ id + "'");
+		if (!resultSet.next()) {
+			object.put("here is the info ", resultSet);
+		}
+			return object.toJSONString();
+		
+	}
+	
+	@Path("/updateinfo/{id}/{name}/{type}/{email}/{password}/{gender}/{date}/{level}/{faculty}/{university}")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String updateInfo(
+			@PathParam("id") String id,
+			@PathParam("name") String name, 
+			@PathParam("type") String type,
+			@PathParam("email") String email,
+			@PathParam("password") String password,
+			@PathParam("gender") String gender, 
+			@PathParam("date") String date,
+			@PathParam("level") String level,
+			@PathParam("faculty") String faculty,
+			@PathParam("university") String university) throws SQLException {
+		databaseCTRL = new DatabaseController();
+		databaseCTRL.executeUpdate("UPDATE  Users SET name='"+ name +"',type='"+type+"',email='"+email
+				+"',password='"+password+"',gender='"+gender+"'date='"+date+"',level='"+level+"',faculty='"+
+				faculty+"',university='"+university+"' where ID="+id);
+		JSONObject object = new JSONObject();
+		object.put("Account", "updated");
+		return object.toJSONString();
+	}
+		
 	public int getLastID() throws SQLException{
 		databaseCTRL = new DatabaseController();
 		ResultSet resultSet = databaseCTRL.executeQuery("Select max(u_ID) from Users");
 		resultSet.next();
 		return Integer.parseInt(resultSet.getString("u_ID"));		
+
 	}
+	
 }

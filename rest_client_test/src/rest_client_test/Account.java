@@ -8,7 +8,7 @@ import java.util.Date;
  */
 public class Account {
 
-    private int ID;
+    private  int ID;
     private String name;
     private String email;
     private String password;
@@ -18,7 +18,7 @@ public class Account {
     private String faculty;
     private String university;
     private String gender;
-  //  private AccountType Type;
+  //private AccountType Type;
     public Account (){
     	
     }
@@ -54,7 +54,7 @@ public class Account {
     public  void setGender(String g){
     	gender=g; 
     }
-//    public void setType(AccountType Type){};
+  //  public void setType(AccountType Type){};
 
     public int getID(){return ID;}
     public String getName(){return name;}
@@ -65,7 +65,7 @@ public class Account {
     public String getFaculty(){return faculty;}
     public String getUniversity(){return university;}
     public String getGender(){return gender;}
-   // public AccountType getType(){return type;};
+ //  public AccountType getType(){return type;};
 
 
 

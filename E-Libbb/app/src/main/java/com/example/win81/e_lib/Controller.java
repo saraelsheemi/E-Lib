@@ -86,15 +86,15 @@ public class Controller {
 
     public void deactivate(Account user) {
 
-<<<<<<< HEAD
+
     };
     public static void signup(String userNameText ,String emailAddressText ,String PasswordText ,
                               String confirmPasswordText ,String dateOfBirthText){
         AccountController accountController = new AccountController();
         accountController.SignUp(userNameText ,emailAddressText ,PasswordText ,confirmPasswordText ,dateOfBirthText);
-=======
+
     }
->>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
+
 
     public void requestHelp(Account user) {
 

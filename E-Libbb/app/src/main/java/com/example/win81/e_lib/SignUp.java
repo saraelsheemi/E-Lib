@@ -35,8 +35,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 String PasswordText = PasswordT.getText().toString();
                 String confirmPasswordText = confirmPasswordT.getText().toString();
                 String dateOfBirthText =dateOfBirthT.getText().toString();
-                Controller controller = new Controller();
-                controller.signup(userNameText ,emailAddressText ,PasswordText ,confirmPasswordText ,dateOfBirthText);
+                if (PasswordText==confirmPasswordText) {
+                    Controller controller = new Controller();
+                    controller.signup(userNameText, emailAddressText, PasswordText, confirmPasswordText, dateOfBirthText);
+                }
+                else
+                    // tl3 2ol en el password mesh match ..
 
         }
 

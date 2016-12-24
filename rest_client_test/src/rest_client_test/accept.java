@@ -28,7 +28,6 @@ public class accept extends ConnectorBuilder {
 		
 		JSONObject jsonObj = (JSONObject) x;
 		System.out.println(jsonObj.toJSONString());
-		
 	}
 
 }

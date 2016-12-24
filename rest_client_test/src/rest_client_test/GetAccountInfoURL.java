@@ -7,7 +7,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class GetInfo extends ConnectorBuilder {
+public class GetAccountInfoURL extends ConnectorBuilder {
 	@Override
 	public void buildURL(Object obj, WebTarget target) throws ParseException {
 			Account account = (Account) obj;

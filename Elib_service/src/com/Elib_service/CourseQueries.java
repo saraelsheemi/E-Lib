@@ -21,10 +21,11 @@ public class CourseQueries {
 
 	private Connection dbConnection;	
 
-	@Path("/add/{id}/{name}/{code}")
+	@Path("/add/{name}/{code}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String addCQuery(@PathParam("id") String id,@PathParam("name") String name,@PathParam("code") String code) throws SQLException{
+	public String addCQuery(@PathParam("name") String name,@PathParam("code") String code) throws SQLException{
+		int id = getLastID()+1;
 		databaseCTRL = new DatabaseController(); 
 		databaseCTRL.executeUpdate("insert into Course values ("+id+",'"+name+"','"+code+"')");
 		 return "Added"; 
@@ -55,6 +56,7 @@ public class CourseQueries {
 		return object.toJSONString();
 		 
 	}
+	
 	@Path("/getinfo")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
@@ -73,6 +75,7 @@ public class CourseQueries {
 		return object.toString();
 		 
 	}
+	
 	@Path("/subscribe/{u_id}/{course_ID}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
@@ -91,6 +94,7 @@ public class CourseQueries {
 		return obj.toString();
 		 
 	}
+	
 	@Path("/unsubscribe/{u_id}/{course_ID}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
@@ -108,5 +112,12 @@ public class CourseQueries {
 		 
 		return obj.toString();
 		 
+	}
+	
+	public int getLastID() throws SQLException{
+		databaseCTRL = new DatabaseController();
+		ResultSet resultSet = databaseCTRL.executeQuery("Select max(course_ID) from Course");
+		resultSet.next();
+		return Integer.parseInt(resultSet.getString("course_ID"));		
 	}
 }

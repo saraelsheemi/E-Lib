@@ -61,12 +61,15 @@ public class MaterialQueries {
 	}
 	// add new material to the database 
 	//Only Admin users can use this function
-	@Path("/add/{id}/{name}/{extension}/{author}/{rate}/{uploader}/{processor}/{date}/{courseID}")
+	@Path("/add/{name}/{extension}/{author}/{rate}/{uploader}/{processor}/{date}/{courseID}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String addMQuery(@PathParam("id") String id, @PathParam("name") String name,@PathParam("extension") String ext,
-			@PathParam("author") String author,@PathParam("rate") String rate,@PathParam("uploader") String uploader,
-			@PathParam("processor") String processor,@PathParam("date") String date,@PathParam("courseID") String courseID) throws SQLException{
+	public String addMQuery(@PathParam("name") String name,@PathParam("extension") String ext,
+							@PathParam("author") String author,
+							@PathParam("rate") String rate,@PathParam("uploader") String uploader,
+							@PathParam("processor") String processor,
+							@PathParam("date") String date,@PathParam("courseID") String courseID) throws SQLException{
+		int id = getLastID()+1;
 		databaseCTRL = new DatabaseController(); 
 		databaseCTRL.executeUpdate("insert into Material values ("+id+","+"'"+name+"'"+","+"'"+ext+"'"+","+"'"+author+"'"+","+rate+","+"'"+uploader+"'"+","+"'"+processor+"'"+","+"'"+date+"'"+","+courseID+")");
 		
@@ -85,10 +88,14 @@ public class MaterialQueries {
 	 	object.put("Name:",resultSet.getString("name"));
 	 	object.put("Rate:",resultSet.getString("rate"));
 	 	object.put("author:",resultSet.getString("author"));
-	 	
-		 
 		return object.toJSONString();
 		 
+	}
+	public int getLastID() throws SQLException{
+		databaseCTRL = new DatabaseController();
+		ResultSet resultSet = databaseCTRL.executeQuery("Select max(m_ID) from Material");
+		resultSet.next();
+		return Integer.parseInt(resultSet.getString("m_ID"));		
 	}
 	
 	

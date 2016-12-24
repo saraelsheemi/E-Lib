@@ -16,10 +16,10 @@ import org.json.simple.JSONObject;
 public class AccountQueries {
 	private DatabaseController databaseCTRL;
 
-	@Path("/create/{id}/{name}/{type}/{email}/{password}/{gender}/{date}/{level}/{faculty}/{university}")
+	@Path("/create/{name}/{type}/{email}/{password}/{gender}/{date}/{level}/{faculty}/{university}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String createAccount(@PathParam("id") String id,
+	public String createAccount(
 			@PathParam("name") String name, @PathParam("type") String type,
 			@PathParam("email") String email,
 			@PathParam("password") String password,
@@ -28,6 +28,7 @@ public class AccountQueries {
 			@PathParam("faculty") String faculty,
 			@PathParam("university") String university) throws SQLException {
 		databaseCTRL = new DatabaseController();
+		int id = getLastID()+1;
 		databaseCTRL.executeUpdate("insert into Users values (" + id + ",'"
 				+ name + "','" + type + "','" + email + "','" + password+ "','" + gender + "','" +date+ "'," + level + ",'" + faculty
 				+ "','" + university + "')");
@@ -52,7 +53,7 @@ public class AccountQueries {
 	@Path("/signin/{email}/{password}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String signIn1(@PathParam("email") String email,
+	public String signIn(@PathParam("email") String email,
 			@PathParam("password") String password) throws SQLException {
 		databaseCTRL = new DatabaseController();
 		JSONObject object = new JSONObject();
@@ -70,29 +71,10 @@ public class AccountQueries {
 			object.put("Invalid", "Email or Password");
 		return object.toJSONString();
 	}
-<<<<<<< HEAD
-	@Path("/userexist/{email}")
-	@GET
-	@Produces(MediaType.TEXT_PLAIN)
-	public String cheackUserExist(@PathParam("email") String email)throws SQLException{
-		databaseCTRL = new DatabaseController();
-		JSONObject object = new JSONObject();
-		
-		ResultSet resultSet = databaseCTRL
-				.executeQuery("Select * from Users where email = " + "'"
-						+ email + "'");
-		if (!resultSet.next()) {
-			object.put("this email is accepted ", resultSet);
-			return object.toJSONString();
-		}
-		
-		
-=======
 	public int getLastID() throws SQLException{
 		databaseCTRL = new DatabaseController();
 		ResultSet resultSet = databaseCTRL.executeQuery("Select max(u_ID) from Users");
 		resultSet.next();
 		return Integer.parseInt(resultSet.getString("u_ID"));		
->>>>>>> aaec12e39d706055eb556954d78924a049cf9f9e
 	}
 }

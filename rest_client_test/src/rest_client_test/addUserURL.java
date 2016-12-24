@@ -10,9 +10,9 @@ import org.json.simple.parser.ParseException;
 public class addUserURL extends ConnectorBuilder {
 
 	@Override
-	//example path /account/add/id/name/type/email/password/gender/date/level/faculty/university
+//example path /account/add/id/name/type/email/password/gender/date/level/faculty/university
 	public void buildURL(Object obj, WebTarget target) throws ParseException {
-	//	obj = (Account) obj;
+//	obj = (Account) obj;
 		Account account = (Account) obj;
 		JSONParser parser = new JSONParser();
 //		Object x = parser.parse(target.path("rest").path("account")

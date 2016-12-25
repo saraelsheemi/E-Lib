@@ -31,7 +31,7 @@
         <activity android:name="com.example.win81.e_lib.HomePage" />
         <activity android:name="com.example.win81.e_lib.Notification" />
         <activity android:name="com.example.win81.e_lib.UploadRequestView" />
-        <activity android:name="com.example.win81.e_lib.material" />
+        <activity android:name="com.example.win81.e_lib.materialUI" />
         <activity android:name="com.example.win81.e_lib.savedmaterial" />
         <activity android:name="com.example.win81.e_lib.saved_material" />
         <activity android:name="com.example.win81.e_lib.search" />

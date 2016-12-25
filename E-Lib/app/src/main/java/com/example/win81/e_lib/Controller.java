@@ -1,71 +1,91 @@
 package com.example.win81.e_lib;
 
+import java.util.ArrayList;
+
 /**
  * Created by tabda on 12/18/2016.
  */
-/*
+
 public class Controller {
-    public static int RateMaterial(materialUI m ,int rate ,User user  ){
 
-        return totalRate;
-    };
-    public static int saveMaterial(materialUI m ,User user){
+    private Object object1;
 
-        return materialId;
-    };
-    public static void readMaterial(materialUI m){
+    public int rateMaterial(Material m) {
 
-    };
-    public static int addComment(String comment ,User user ,int materialId ){
+        return m.getRating();
+    }
 
-        return commentId;
-    };
-    public static int reportComment (int commentId ,User user ){
 
-        return reportId;
-    };
-    public static int removeComment (int commentId ,User user ,){
+    public int saveMaterial(Material m) {
 
-        return userId;
-    };
-    public static void deleteMaterial (matrial m ,User user ){
+        return m.getMaterialID();
+    }
 
-    };
-    public static int uploadRequest (materialUI m , User user ){
+    public void readMaterial(Material m) {
 
-        return requestId;
-    };
-    public static void viewRequest (int requestId ){
+    }
 
-    };
-    public static void openMaterial (materialUI m ,User user){
+    public void openMaterial(Material m) {
 
-        return materialId;
-    };
-    public static int addMaterial (materialUI m ){
+    }
 
-        return materialId;
-    };
-    public static void subscibe(course course ,User user){
+    public void deleteMaterial(Material m) {
 
-    };
-    public static void unsubscribe(course course ,User user){
+    }
 
-    };
-    public static void signIn(stirng name ,int id ){
+    public int addMaterial(Material m) {
 
-    };
-    public static void signup(account account){
+        return m.getMaterialID();
+    }
 
-    };
-    public static void deactivate(User user){
+    public void addComment(String comment) {
 
-    };
-    public static void requestHelp(User user){
+    }
 
-        return inquiryId;
-    };
+    public void reportComment(int commentID) {
+
+    }
+
+    public void removeComment(int commentID) {
+
+    }
+
+
+    public void uploadRequest(UploadRequest requset) {
+
+    }
+
+
+    public void viewRequests(int requestID) {
+
+    }
+
+
+    public void subscibe(Course c) {
+
+    }
+
+
+    public void unsubscribe(Course c) {
+
+    }
+
+
+    public void signIn(String name, String password) {
+
+    }
+
+    public void signUp(Account newAccount) {
+
+    }
+
+    public void deactivate(Account user) {
+
+    }
+
+    public void requestHelp(Account user) {
+
+    }
+
 
 }
-
-*/

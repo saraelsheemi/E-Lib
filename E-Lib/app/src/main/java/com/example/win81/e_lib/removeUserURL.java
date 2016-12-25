@@ -14,7 +14,7 @@ public class removeUserURL extends ConnectorBuilder{
 		Account account = (Account) obj;
 		JSONParser parser = new JSONParser();
 		Object x = parser.parse(target.path("rest").path("account")
-				.path("delete").path(Integer.toString(account.getID())).request()
+				.path("delete").path(Integer.toString(account.getAccountID())).request()
 				.accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 		JSONObject jsonObj = (JSONObject) x;
 		System.out.println(jsonObj.toJSONString());

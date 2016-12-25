@@ -14,7 +14,7 @@ public class GetAccountInfoURL extends ConnectorBuilder {
 			JSONParser parser = new JSONParser();
 			
 			Object x = parser.parse(target.path("rest").path("account")
-					.path("getinfo").path(Integer.toString(account.getID()))
+					.path("getinfo").path(Integer.toString(account.getAccountID()))
 					.request()
 					.accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 			

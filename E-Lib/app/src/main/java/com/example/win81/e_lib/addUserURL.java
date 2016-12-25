@@ -16,9 +16,9 @@ public class addUserURL extends ConnectorBuilder {
 		Account account = (Account) obj;
 		JSONParser parser = new JSONParser();
 		Object x = parser.parse(target.path("rest").path("account")
-		.path("create").path(Integer.toString(account.getID())).path(account.getName())
-		.path("user").path(account.getEmail()).path(account.getPassword()).path(account.getGender())
-		.path(account.getDateOfBirth()).path(Integer.toString(account.getLevel()))
+		.path("create").path(Integer.toString(account.getAccountID())).path(account.getName())
+		.path("user").path(account.getEmail()).path(account.getPassword()).path(String.valueOf(account.getGender()))
+		.path(String.valueOf(account.getDateOfBirth())).path(Integer.toString(account.getLevel()))
 		.path(account.getFaculty()).path(account.getUniversity()).request().accept(MediaType.TEXT_PLAIN)
 		.get(String.class).toString());	
 //		Object x = parser.parse(target.path("rest").path("account")

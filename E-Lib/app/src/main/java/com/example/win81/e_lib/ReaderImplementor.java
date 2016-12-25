@@ -5,11 +5,11 @@ package com.example.win81.e_lib;
  */
 
 public class ReaderImplementor {
-    public static void read(){
+    public void read() {
 
     }
 
-    public static void checkType(){
+    public void checkType() {
 
     }
 }

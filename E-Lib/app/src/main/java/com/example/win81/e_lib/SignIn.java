@@ -22,7 +22,7 @@ public class SignIn extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        HomeCommands m = new openCoursePage();
+                        HomeCommands m = new OpenCoursePage();
                         m.excute();
                         //
                         Intent intent = new Intent(SignIn.this,SignUp.class);

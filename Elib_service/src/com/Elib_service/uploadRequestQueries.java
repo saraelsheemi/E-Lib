@@ -59,82 +59,82 @@ public class uploadRequestQueries {
 	
 
 //	
-    @POST
-    @Path("/upload")
-    @Consumes("multipart/form-data")
-    public Response uploadFile(MultipartFormDataInput input) throws IOException {
-          
-        Map<String, java.util.List<InputPart>> uploadForm = input.getFormDataMap();
- 
-        // Get file data to save
-        java.util.List<InputPart> inputParts = uploadForm.get("attachment");
- 
-        for (InputPart inputPart : inputParts) {
-            try {
- 
-                MultivaluedMap<String, String> header = inputPart.getHeaders();
-                String fileName = getFileName(header);
-   
-                // convert the uploaded file to inputstream
-                InputStream inputStream = inputPart.getBody(InputStream.class,
-                        null);
- 
-                byte[] bytes =new byte[8192];
-                int bytesRead;
-                ByteArrayOutputStream output = new ByteArrayOutputStream();
-                while ((bytesRead = inputStream.read(bytes)) != -1)
-                {
-                    output.write(bytes, 0, bytesRead);
-                }
-                // constructs upload file path
-                fileName = "/home/user/Downloads/" + fileName;
-                writeFile(bytes, fileName);
- 
-                  
-                return Response.status(200).entity("Uploaded file name : " + fileName)
-                        .build();
- 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return null;
-    }
-    private String getFileName(MultivaluedMap<String, String> header) {
-    	 
-        String[] contentDisposition = header.getFirst("Content-Disposition").split(";");
- 
-        for (String filename : contentDisposition) {
-            if ((filename.trim().startsWith("filename"))) {
- 
-                String[] name = filename.split("=");
- 
-                String finalFileName = name[1].trim().replaceAll("\"", "");
-                return finalFileName;
-            }
-        }
-        return "unknown";
-    }
+//    @POST
+//    @Path("/upload")
+//    @Consumes("multipart/form-data")
+//    public Response uploadFile(MultipartFormDataInput input) throws IOException {
+//          
+//        Map<String, java.util.List<InputPart>> uploadForm = input.getFormDataMap();
 // 
-    // Utility method
-    private void writeFile(byte[] content, String filename) throws IOException {
-        File file = new File(filename);
-        if (!file.exists()) {
-            System.out.println("not exist> " + file.getAbsolutePath());
-            file.createNewFile();
-        }
-        FileOutputStream fop = new FileOutputStream(file);
-        fop.write(content);
-        fop.flush();
-        fop.close();
-    }
+//        // Get file data to save
+//        java.util.List<InputPart> inputParts = uploadForm.get("file");
+// 
+//        for (InputPart inputPart : inputParts) {
+//            try {
+// 
+//                MultivaluedMap<String, String> header = inputPart.getHeaders();
+//                String fileName = getFileName(header);
+//   
+//                // convert the uploaded file to inputstream
+//                InputStream inputStream = inputPart.getBody(InputStream.class,
+//                        null);
+// 
+//                byte[] bytes =new byte[8192];
+//                int bytesRead;
+//                ByteArrayOutputStream output = new ByteArrayOutputStream();
+//                while ((bytesRead = inputStream.read(bytes)) != -1)
+//                {
+//                    output.write(bytes, 0, bytesRead);
+//                }
+//                // constructs upload file path
+//                fileName = "/home/user/Downloads/" + fileName;
+//                writeFile(bytes, fileName);
+// 
+//                  
+//                return Response.status(200).entity("Uploaded file name : " + fileName)
+//                        .build();
+// 
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return null;
+//    }
+//    private String getFileName(MultivaluedMap<String, String> header) {
+//    	 
+//        String[] contentDisposition = header.getFirst("Content-Disposition").split(";");
+// 
+//        for (String filename : contentDisposition) {
+//            if ((filename.trim().startsWith("filename"))) {
+// 
+//                String[] name = filename.split("=");
+// 
+//                String finalFileName = name[1].trim().replaceAll("\"", "");
+//                return finalFileName;
+//            }
+//        }
+//        return "unknown";
+//    }
+//// 
+//    // Utility method
+//    private void writeFile(byte[] content, String filename) throws IOException {
+//        File file = new File(filename);
+//        if (!file.exists()) {
+//            System.out.println("not exist> " + file.getAbsolutePath());
+//            file.createNewFile();
+//        }
+//        FileOutputStream fop = new FileOutputStream(file);
+//        fop.write(content);
+//        fop.flush();
+//        fop.close();
+//    }
 //    @POST  
 //    @Path("/upload")  
 //    @Consumes(MediaType.MULTIPART_FORM_DATA)  
 //    public Response uploadFile(  
 //            @FormDataParam("file") InputStream uploadedInputStream,  
-//            @FormDataParam("file") FormDataContentDisposition fileDetail) {  
-//            String fileLocation = "e://" + fileDetail.getFileName();  
+//            @FormDataParam("file") FormDataContentDisposition fileDetail) throws SQLException {  
+//            String fileLocation = "D://" + fileDetail.getFileName();  
 //                    //saving file  
 //            try {  
 //                FileOutputStream out = new FileOutputStream(new File(fileLocation));  
@@ -146,11 +146,12 @@ public class uploadRequestQueries {
 //                }  
 //                out.flush();  
 //                out.close();  
+//              
 //            } catch (IOException e) {e.printStackTrace();}  
 //            String output = "File successfully uploaded to : " + fileLocation;  
 //            return Response.status(200).entity(output).build();  
 //        }  
-//    
+    
 	@Path("accept/{id}")
     @GET
     @Produces(MediaType.TEXT_PLAIN)

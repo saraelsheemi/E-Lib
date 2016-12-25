@@ -44,5 +44,9 @@ import org.json.simple.JSONObject;
 		return 0;
  		
  	}
+	public PreparedStatement prepareStatement(String sql) throws SQLException {
+	//	dbConnection.prepareStatement(sql);
+		return dbConnection.prepareStatement(sql);
+	}
  	
  }

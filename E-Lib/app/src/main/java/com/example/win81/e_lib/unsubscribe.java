@@ -10,7 +10,7 @@ import org.json.simple.parser.ParseException;
 public class unsubscribe extends ConnectorBuilder {
 
 	@Override
-	public void buildURL(Object obj, WebTarget target) throws ParseException {
+	public String buildURL(Object obj, WebTarget target) throws ParseException {
 		
 		Course course = (Course)obj;
 		Account account = (Account) obj;
@@ -23,7 +23,7 @@ public class unsubscribe extends ConnectorBuilder {
 				.accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 		
 		JSONObject jsonObj = (JSONObject) x;
-		System.out.println(jsonObj.toJSONString());
+		return jsonObj.toJSONString();
 		
 	}
 

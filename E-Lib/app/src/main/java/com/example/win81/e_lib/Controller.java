@@ -1,91 +1,77 @@
 package com.example.win81.e_lib;
 
-import java.util.ArrayList;
+import org.json.simple.parser.ParseException;
 
 /**
  * Created by tabda on 12/18/2016.
  */
 
 public class Controller {
+    /*
+    public static int RateMaterial(materialUI m ,int rate ,User user  ){
 
-    private Object object1;
+        return totalRate;
+    };
+    public static int saveMaterial(materialUI m ,User user){
 
-    public int rateMaterial(Material m) {
+        return materialId;
+    };
+    public static void readMaterial(materialUI m){
 
-        return m.getRating();
+    };
+    public static int addComment(String comment ,User user ,int materialId ){
+
+        return commentId;
+    };
+    public static int reportComment (int commentId ,User user ){
+
+        return reportId;
+    };
+    public static int removeComment (int commentId ,User user ,){
+
+        return userId;
+    };
+    public static void deleteMaterial (matrial m ,User user ){
+
+    };
+    public static int uploadRequest (materialUI m , User user ){
+
+        return requestId;
+    };
+    public static void viewRequest (int requestId ){
+
+    };
+    public static void openMaterial (materialUI m ,User user){
+
+        return materialId;
+    };
+    public static int addMaterial (materialUI m ){
+
+        return materialId;
+    };
+    public static void subscibe(course course ,User user){
+
+    };
+    public static void unsubscribe(course course ,User user){
+
+    };
+    */
+    public static void signIn(String email ,String password ) throws ParseException {
+        AccountController accountController = new AccountController();
+        accountController.SignIn(email,password);
+
+    };
+    public static void signup(String name, String email , String password, String date) throws ParseException {
+    AccountController accountController= new AccountController();
+        accountController.SignUp(name,email,password,date);
     }
-
-
-    public int saveMaterial(Material m) {
-
-        return m.getMaterialID();
-    }
-
-    public void readMaterial(Material m) {
-
-    }
-
-    public void openMaterial(Material m) {
-
-    }
-
-    public void deleteMaterial(Material m) {
-
-    }
-
-    public int addMaterial(Material m) {
-
-        return m.getMaterialID();
-    }
-
-    public void addComment(String comment) {
-
-    }
-
-    public void reportComment(int commentID) {
-
-    }
-
-    public void removeComment(int commentID) {
-
-    }
-
-
-    public void uploadRequest(UploadRequest requset) {
-
-    }
-
-
-    public void viewRequests(int requestID) {
-
-    }
-
-
-    public void subscibe(Course c) {
-
-    }
-
-
-    public void unsubscribe(Course c) {
-
-    }
-
-
-    public void signIn(String name, String password) {
+  /*  public static void deactivate(User user){
 
     }
+    public static void requestHelp(User user){
 
-    public void signUp(Account newAccount) {
-
-    }
-
-    public void deactivate(Account user) {
-
-    }
-
-    public void requestHelp(Account user) {
-
-    }
-
-
+        return inquiryId;
+    };
+*/
 }
+

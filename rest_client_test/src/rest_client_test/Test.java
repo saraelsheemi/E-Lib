@@ -7,6 +7,7 @@ import javax.ws.rs.client.WebTarget ;
 import javax.ws.rs.core.MediaType ; 
 import javax.ws.rs.core.Response;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import javax.ws.rs.core.UriBuilder;
@@ -53,25 +54,29 @@ public class Test {
 
 			
 			Account x = new Account ();
-			x.setDateOfBirth("1996-09-22");
-			x.setEmail("sara@yahoo.commm");
-			x.setFaculty("jaj");
-			x.setID(200);
-			x.setGender("female");
-			x.setLevel(3);
-			x.setPassword("yoy");
-			x.setType("user");
-			x.setUniversity("cairo");
-			x.setName("youssef");
-			
+//			x.setDateOfBirth("1996-09-22");
+//			x.setEmail("sara@yahoo.commm");
+//			x.setFaculty("jaj");
+//			x.setID(200);
+//			x.setGender("female");
+//			x.setLevel(3);
+//			x.setPassword("yoy");
+//			x.setType("user");
+//			x.setUniversity("cairo");
+//			x.setName("youssef");
+			x.setID(1);
 			
 			ConnectorBuilder adduser = new addUserURL(); 
 			ConnectorBuilder signin = new signInURL();
 			ConnectorBuilder removeUser = new removeUserURL();
 			ConnectorBuilder getInfo = new GetAccountInfoURL();
 			Connector connector = new Connector(x);
-			connector.setConnectorBuilder(adduser);
+			connector.setConnectorBuilder(getInfo);
 			connector.initiateURL();
-			connector.sendData();
+			String x1 = connector.sendData();
+			JSONParser parser = new JSONParser(); 
+			JSONObject json = (JSONObject) parser.parse(x1);
+			System.out.println(json.toJSONString());
+			
 		}
 }

@@ -31,8 +31,8 @@ public class Connector {
 		target = client.target(UriBuilder.fromUri("http://localhost:8080/Elib_service").build());	
 	
 	}
-	public void sendData() throws ParseException{
-		connectorBuilder.buildURL(obj, target);
+	public String sendData() throws ParseException{
+		return connectorBuilder.buildURL(obj, target);
 		
 	}
 

@@ -8,10 +8,10 @@ import java.io.File;
  */
 
 public class UploadRequestController {
-    ConnectorBuilder cb;
-    ArrayList<UploadRequest> inquiry = new ArrayList<UploadRequest>();
+   // ConnectorBuilder cb = new ConnectorBuilder();
 
-    public static void request(String request, File f) {
+
+    public static void request(String request, File f){
 
     }
 }

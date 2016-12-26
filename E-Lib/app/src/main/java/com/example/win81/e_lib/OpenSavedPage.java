@@ -6,12 +6,12 @@ import android.content.Intent;
  * Created by tabda on 12/18/2016.
  */
 
-public class OpenSavedPage extends HomeCommands {
+//public class openSavedPage  {
 
-    @Override
-    public void execute() {
 
-        //Intent intent = new Intent(SignIn.this,SignUp.class);
-        //setContentView(R.layout.s);
-    }
-}
+//    public void excute() {
+
+       // Intent intent = new Intent(SignIn.this,SignUp.class);
+     //   setContentView(R.layout.s);
+   // }
+//}

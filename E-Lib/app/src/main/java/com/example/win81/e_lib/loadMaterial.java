@@ -10,7 +10,7 @@ import org.json.simple.parser.ParseException;
 public class loadMaterial extends ConnectorBuilder {
 
 	@Override
-	public void buildURL(Object obj, WebTarget target) throws ParseException {
+	public String  buildURL(Object obj, WebTarget target) throws ParseException {
 		
 		Material material = (Material) obj;
 		JSONParser parser = new JSONParser();
@@ -20,7 +20,7 @@ public class loadMaterial extends ConnectorBuilder {
 				.request().accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 		
 		JSONObject jsonObj = (JSONObject) x;
-		System.out.println(jsonObj.toJSONString());
+		return jsonObj.toJSONString();
 
 		
 	}

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class UserInquiryController {
-    ConnectorBuilder cb = new ConnectorBuilder();
+   // ConnectorBuilder cb = new ConnectorBuilder();
     ArrayList<UserInquiry> inquiry = new ArrayList<UserInquiry>();
 
     public static void request(String inquiry, File f){

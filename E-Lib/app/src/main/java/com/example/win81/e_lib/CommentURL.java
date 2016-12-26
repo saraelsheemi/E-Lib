@@ -9,9 +9,13 @@ import javax.ws.rs.client.WebTarget;
  */
 public class CommentURL extends ConnectorBuilder {
     @Override
-    public void buildURL(Object obj, WebTarget target) throws ParseException {
-        // TODO Auto-generated method stub
-
+    public String buildURL(Object obj, WebTarget target) throws ParseException {
+        return null;
     }
+   /* private URL data;
+    public void sendData( URL data) {};
 
+    public  URL getData(){
+        return data;
+    } */
 }

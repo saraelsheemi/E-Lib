@@ -5,7 +5,7 @@ package com.example.win81.e_lib;
  */
 
 public class PPTX extends ReaderImplementor {
-    public void read() {
+    public static void read(){
 
     }
 }

@@ -5,7 +5,7 @@ package com.example.win81.e_lib;
  */
 
 public class XLSX extends ReaderImplementor {
-    public void read() {
+    public static void read(){
 
     }
 }

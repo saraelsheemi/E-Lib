@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter Username"
+        android:text="Enter Name"
         android:id="@+id/textView4"
         android:layout_marginTop="87dp"
         android:textSize="18dp"

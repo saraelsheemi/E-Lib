@@ -5,8 +5,6 @@ package com.example.win81.e_lib;
  */
 
 public abstract class HomeCommands {
-    public  void execute(){
-
-    }
+    public  void excute(){};
 
 }

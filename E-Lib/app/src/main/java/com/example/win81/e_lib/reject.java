@@ -10,7 +10,7 @@ import org.json.simple.parser.ParseException;
 public class reject extends ConnectorBuilder {
 
 	@Override
-	public void buildURL(Object obj, WebTarget target) throws ParseException {
+	public String buildURL(Object obj, WebTarget target) throws ParseException {
 		
 		UploadRequest request = (UploadRequest) obj;
 		JSONParser parser = new JSONParser();
@@ -20,7 +20,7 @@ public class reject extends ConnectorBuilder {
 				.accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 		
 		JSONObject jsonObj = (JSONObject) x;
-		System.out.println(jsonObj.toJSONString());
+		return jsonObj.toJSONString();
 		
 		
 	}

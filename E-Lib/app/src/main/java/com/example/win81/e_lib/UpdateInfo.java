@@ -9,7 +9,7 @@ import org.json.simple.parser.ParseException;
 
 public class UpdateInfo extends ConnectorBuilder  {
 	@Override
-	public void buildURL(Object obj, WebTarget target) throws ParseException {
+	public String buildURL(Object obj, WebTarget target) throws ParseException {
 			Account account = (Account) obj;
 			JSONParser parser = new JSONParser();
 			
@@ -29,7 +29,7 @@ public class UpdateInfo extends ConnectorBuilder  {
 					.accept(MediaType.TEXT_PLAIN).get(String.class).toString());
 			
 			JSONObject jsonObj = (JSONObject) x;
-			System.out.println(jsonObj.toJSONString());
+			return jsonObj.toJSONString();
 		}
 
 }

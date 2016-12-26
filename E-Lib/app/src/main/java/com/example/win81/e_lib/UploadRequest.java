@@ -3,12 +3,8 @@ package com.example.win81.e_lib;
 import java.io.File;
 import java.util.Date;
 
-/**
- * Created by hanahana on 20/12/2016.
- */
 public class UploadRequest {
-
-    private int requestID;
+	private int requestID;
     private File f;
     private String fileDescription;
     private String fileName;
@@ -59,14 +55,15 @@ public class UploadRequest {
     public File getFile() {
         return f;
     }
-
-    public void setFileDescription(String fileDescription) {
+    
+    public void setFileDescripion(String fileDescription) {
         this.fileDescription = fileDescription;
     }
-
-    public String getFileDescription() {
-        return fileDescription;
+    
+    public String getFileDescripion() {
+       return fileDescription;
     }
+
 
     public void setFileName(String fileName) {
         this.fileName = fileName;

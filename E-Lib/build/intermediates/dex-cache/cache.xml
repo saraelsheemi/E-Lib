@@ -2,193 +2,165 @@
 <items version="2" >
 
     <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\javax.inject-2.5.0-b05.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="aad1872e1bf5e573229b7ec143d6f83f33b753e4">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\javax.inject-2.5.0-b05_4e3da0096a6b64c51bea45bbcc61dbbfa654bf3c.jar" />
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_2937a95d6c9a9c2040215617c4a0c08a1134ddd1\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\javax.ws.rs-api-2.0.1.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\jersey-container-servlet.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="104e9c2b5583cfcfeac0402316221648d6d8ea6b">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\javax.ws.rs-api-2.0.1_a9f8b48994be91266a02f2cc9cfa4a38e33759d1.jar" />
+        sha1="047da89ccedf144858c1a604b69c9b9515c2c9ea">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\jersey-container-servlet_5d71843bd47f0608fa0c5fb71f79eb5d26580b0c\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_9dd3afe766968c54438ed29cbe76235bf9d5f7b8.jar" />
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_ae84f43cfe2ab3370a3c384dc39dcc517a4ac0f2\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-common.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\hk2-api-2.5.0-b05.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="84df56324789921fb408985dc1355f628de0b80c">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-common_6960a6f2c1b784be0dcef60a8848d5ac1c0602ae.jar" />
+        sha1="d54a52f5b869b247348cb0ec08edd432c22ef65f">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\hk2-api-2.5.0-b05_c04a0f227c4518436b2cfcd2e8bdf9f6fdb8e307\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\osgi-resource-locator-1.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4ed2b2d4738aed5786cfa64cba5a332779c4c708">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\osgi-resource-locator-1.0.1_f6b66555f1872b54319fa06198b68af48327d04f\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\aopalliance-repackaged-2.5.0-b05.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="51becf370a71dad73e6bcc554efb7246ad24c492">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\aopalliance-repackaged-2.5.0-b05_f58bea180568b80103af0f33816782e1bf5fe937\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_ebe9f28b140503c6d8f325b2e4ca0aba6f5842c6\classes.dex" />
     </item>
     <item
         jar="C:\Users\win8.1\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_d99ef1c9eabf44dea3577de381b38e5e5e9c6fb4.jar" />
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_d99ef1c9eabf44dea3577de381b38e5e5e9c6fb4\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\javassist-3.20.0-GA.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_a65a8d4baa251478ce420fbd18346700e30e1a9f.jar" />
+        sha1="a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\javassist-3.20.0-GA_920a9a576048f83c05d652da70f0e3ec72e84105\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-media-jaxb.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="25c2d322e193371ab800367f553207290da1cb0b">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-media-jaxb_8cf20a94a35c721604390392401e0358be25d955.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-guava-2.23.2.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="eead3375706f2d5df991e14821efe509bfb182e0">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-guava-2.23.2_cd9c632bc205c1ce77da62c8f6eba7ea9578d0e5.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\asm-debug-all-5.0.4.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="702b8525fcf81454235e5e2fa2a35f15ffc0ec7e">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\asm-debug-all-5.0.4_73134f387407892c09087279798dbd12235ee68c.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_f0d31482df6ea4a24a0fe91991ef94b47d50d8c0.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\aopalliance-repackaged-2.5.0-b05.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="51becf370a71dad73e6bcc554efb7246ad24c492">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\aopalliance-repackaged-2.5.0-b05_4ffcff95e9c620900aaa53248595b43eb9307d05.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\validation-api-1.1.0.Final.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8613ae82954779d518631e05daa73a6a954817d5">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\validation-api-1.1.0.Final_b75377197982f3b7e3d230e0ad8053eea4ffc8a4.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-server.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f17025b8e32b48bee43b2c9ca40e21fc90cf38fb">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-server_67a55c9be9e2215d10d42ecd97db5facde36c82b.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\persistence-api-1.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="5725f57873e05e068803e2bf9d5a8ea3740ffec5">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\persistence-api-1.0_06ceb37a3e83d43a7f27ba89ac824da9ebd44cd9.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_4e0c6a5d8d8699b2d83d629396794d50c796c383.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_92acec1bee67bfa8652317d1d6d85ced13015c83.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\javax.servlet-api-3.0.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="6bf0ebb7efd993e222fc1112377b5e92a13b38dd">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\javax.servlet-api-3.0.1_97c2cd16c70260983bcda15ddcfe21b96c9d04a7.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\json-simple-1.1.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\json-simple-1.1.1_70a58c7b1ece6615e0899e64fb738e27032001fc.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.3.0_a99bb12fc74d7e2444cc6fe02af20379e3940f68.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-container-servlet.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="047da89ccedf144858c1a604b69c9b9515c2c9ea">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-container-servlet_5aadb35f2b61cc4ea4a14fcdddfd0ddcc42effe7.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.3.0_1d13d3ec7900a64dbabb592c6cf5cc6e3ceb2b31.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\org.osgi.core-4.2.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="66ab449ff3aa5c4adfc82c89025cc983b422eb95">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\org.osgi.core-4.2.0_3a152cfa7089b8faf952d50ac58660a81a5f6267.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-client.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="90ea1d2edb93653d15fce3c3b4a20f2237690900">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-client_31f985bdee7f44cab4bc5892addb8a55cdebe84d.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\javax.annotation-api-1.2.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="479c1e06db31c432330183f5cae684163f186146">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\javax.annotation-api-1.2_6be3869826dd43c8952f9ead6fcd820e1d9a977a.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\hk2-locator-2.5.0-b05.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="bed6e7565ce9491a53f047c17e3951b4dfd101fa">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\hk2-locator-2.5.0-b05_76740f0f3adcde893dd4fb6e72d3bf7f708be1a6.jar" />
-    </item>
-    <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\jersey-container-servlet-core.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\jersey-container-servlet-core.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="c9937b31b90d61bd543f6805f93b6c394de6e842">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\jersey-container-servlet-core_3c47979a0c9bc4ee742a934fd18aee72a259c6ad.jar" />
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\jersey-container-servlet-core_3b3bd247b938787e1e182b19d999bba4664a549b\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidSDK\E-Lib\app\libs\hk2-utils-2.5.0-b05.jar"
-        jumboMode="false"
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\jersey-guava-2.23.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="eead3375706f2d5df991e14821efe509bfb182e0">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\jersey-guava-2.23.2_ab16529b20163fd359c84e4da61a57484a77e2a8\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_33e7de7a25aa951129144df1f1d8c378b36ab57e\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_4f639089b112cff69921914bb3fd1080bdf8f95a\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\javax.annotation-api-1.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\javax.annotation-api-1.2_a4bf4fcaeae2de4481e426fe2577ad97921f1a11\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\hk2-utils-2.5.0-b05.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="ede783b3e16339f83603e3293c83bda7a88526bc">
-        <dex dex="D:\AndroidSDK\E-Lib\app\build\intermediates\pre-dexed\debug\hk2-utils-2.5.0-b05_6d0a982654fbff6d11f6dec86066f08bd873e4f8.jar" />
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\hk2-utils-2.5.0-b05_aac649078897fe0594b3a0a4b94babcd7fb4e8d2\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\asm-debug-all-5.0.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="702b8525fcf81454235e5e2fa2a35f15ffc0ec7e">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\asm-debug-all-5.0.4_2c3a729db455ec6c885defa0d88f88ff1ab1e41d\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\jersey-media-jaxb.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="25c2d322e193371ab800367f553207290da1cb0b">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\jersey-media-jaxb_9ec046010dfcbdc998b0b51811ee9999366315e1\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\persistence-api-1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5725f57873e05e068803e2bf9d5a8ea3740ffec5">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\persistence-api-1.0_6cf69737bcc2ac184091b476fdebfcfa8009d694\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="aeeedf14c35aaeb742199b9579d6be0d70e97d99">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_061349329b09d8516be9c1bf1e9111d53658a455\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\hk2-locator-2.5.0-b05.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bed6e7565ce9491a53f047c17e3951b4dfd101fa">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\hk2-locator-2.5.0-b05_dda42b71fc095d7353f7f99e140853c8704435e5\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_d6567d416769897158d3d8c9e0dd264911c78fbd\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\validation-api-1.1.0.Final.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8613ae82954779d518631e05daa73a6a954817d5">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\validation-api-1.1.0.Final_d2a4124ae6d80ad0178a41988a3f07c484c4422d\classes.dex" />
+    </item>
+    <item
+        jar="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\libs\org.osgi.core-4.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="66ab449ff3aa5c4adfc82c89025cc983b422eb95">
+        <dex dex="D:\University\Semester 5\SE-2\E-Lib\E-Lib\app\build\intermediates\transforms\dex\debug\folders\1000\2\org.osgi.core-4.2.0_fdb3c579db0147d1ebd8510bc58ebf709b84b2a6\classes.dex" />
     </item>
 
 </items>
